@@ -154,7 +154,7 @@ namespace elfldr {
 							////util::WriteString(util::Ptr(0x0039B440), "data/char/board.mpf");
 
 							for (int i = 1; i < 7; i++) {
-								string IdString = lexical_cast<string>(i);
+								string IdString = reinterpret_cast<char*>(i);
 								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + IdString + "_suit.ssh");
 								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + IdString + "_boot.ssh");
 							}
