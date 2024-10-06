@@ -22,7 +22,6 @@
 #include <utils/CodeUtils.h>
 #include <utils/GameVersion.h>
 #include <utils/Utils.h>
-#include <string>
 
 #include "../ElfPatch.h"
 
@@ -155,9 +154,8 @@ namespace elfldr {
 							////util::WriteString(util::Ptr(0x0039B440), "data/char/board.mpf");
 
 							for (int i = 1; i < 7; i++) {
-								string IdString = reinterpret_cast<char*>(i);
-								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + IdString + "_suit.ssh");
-								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + IdString + "_boot.ssh");
+								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + reinterpret_cast<char*>(i) + "_suit.ssh");
+								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + reinterpret_cast<char*>(i) + "_boot.ssh");
 							}
 
 							
