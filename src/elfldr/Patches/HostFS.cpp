@@ -152,10 +152,12 @@ namespace elfldr {
 							util::WriteString(util::Ptr(0x0039B6F0), "data/char/marisol_head.mpf");
 							util::WriteString(util::Ptr(0x0039B710), "data/char/zz_mmm_head.mpf");
 							////util::WriteString(util::Ptr(0x0039B440), "data/char/board.mpf");
-
+							
 							for (int i = 1; i < 7; i++) {
-								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + reinterpret_cast<char*>(i) + "_suit.ssh");
-								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + reinterpret_cast<char*>(i) + "_boot.ssh");
+								static char charPath[25] {};
+								snprintf(&charPath[0], 25, "data/char/eddie%s_suit.ssh", reinterpret_cast<char*>(i));
+								util::WriteString(util::Ptr(0x0039B730 + i * 32), charPath);
+								//util::WriteString(util::Ptr(0x0039B730 + i * 32 +16), "data/char/eddie" + reinterpret_cast<char*>(i) + "_boot.ssh");
 							}
 
 							
