@@ -124,6 +124,34 @@ namespace elfldr {
 							util::WriteString(util::Ptr(0x003873b0), "host:data/modules/mcman.irx");
 							util::WriteString(util::Ptr(0x003873f0), "host:data/modules/mcserv.irx");
 
+							//Bigless Characters
+							util::WriteString(util::Ptr(0x0039B420), "data/char/eddie_body.mpf");
+							util::WriteString(util::Ptr(0x0039B440), "data/char/kaori_body.mpf");
+							util::WriteString(util::Ptr(0x0039B460), "data/char/luther_body.mpf");
+							util::WriteString(util::Ptr(0x0039B480), "data/char/mac_body.mpf");
+							util::WriteString(util::Ptr(0x0039B498), "data/char/moby_body.mpf");
+							util::WriteString(util::Ptr(0x0039B4B8), "data/char/zoe_body.mpf");
+							util::WriteString(util::Ptr(0x0039B4D0), "data/char/jp_body.mpf");
+							util::WriteString(util::Ptr(0x0039B4E8), "data/char/elise_body.mpf");
+							util::WriteString(util::Ptr(0x0039B508), "data/char/psymon_body.mpf");
+							util::WriteString(util::Ptr(0x0039B528), "data/char/seeiah_body.mpf");
+							util::WriteString(util::Ptr(0x0039B548), "data/char/brodi_body.mpf");
+							util::WriteString(util::Ptr(0x0039B568), "data/char/marisol_body.mpf");
+							util::WriteString(util::Ptr(0x0039B588), "data/char/zz_mmm_body.mpf");
+							util::WriteString(util::Ptr(0x0039B5A8), "data/char/eddie_head.mpf");
+							util::WriteString(util::Ptr(0x0039B5C8), "data/char/kaori_head.mpf");
+							util::WriteString(util::Ptr(0x0039B5E8), "data/char/luther_head.mpf");
+							util::WriteString(util::Ptr(0x0039B608), "data/char/mac_head.mpf");
+							util::WriteString(util::Ptr(0x0039B620), "data/char/moby_head.mpf");
+							util::WriteString(util::Ptr(0x0039B640), "data/char/zoe_head.mpf");
+							util::WriteString(util::Ptr(0x0039B658), "data/char/jp_head.mpf");
+							util::WriteString(util::Ptr(0x0039B670), "data/char/elise_head.mpf");
+							util::WriteString(util::Ptr(0x0039B690), "data/char/psymon_head.mpf");
+							util::WriteString(util::Ptr(0x0039B6B0), "data/char/seeiah_head.mpf");
+							util::WriteString(util::Ptr(0x0039B6D0), "data/char/brodi_head.mpf");
+							util::WriteString(util::Ptr(0x0039B6F0), "data/char/marisol_head.mpf");
+							util::WriteString(util::Ptr(0x0039B710), "data/char/zz_mmm_head.mpf");
+							//util::WriteString(util::Ptr(0x0039B440), "data/char/board.mpf");
 							// BIGless worlds
 							// You'll need bigfile's bigextract to extract the world archives,
 							// since they're c0fb BIG archives.
