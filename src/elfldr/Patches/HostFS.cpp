@@ -22,6 +22,7 @@
 #include <utils/CodeUtils.h>
 #include <utils/GameVersion.h>
 #include <utils/Utils.h>
+#include <cstdio>
 
 #include "../ElfPatch.h"
 
