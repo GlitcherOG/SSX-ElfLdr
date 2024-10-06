@@ -152,6 +152,13 @@ namespace elfldr {
 							util::WriteString(util::Ptr(0x0039B6F0), "data/char/marisol_head.mpf");
 							util::WriteString(util::Ptr(0x0039B710), "data/char/zz_mmm_head.mpf");
 							////util::WriteString(util::Ptr(0x0039B440), "data/char/board.mpf");
+
+							for (int i = 1; i < 7; i++) {
+								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + itoa(i) + "_suit.ssh");
+								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + itoa(i) + "_boot.ssh");
+							}
+
+							
 							// BIGless worlds
 							// You'll need bigfile's bigextract to extract the world archives,
 							// since they're c0fb BIG archives.
