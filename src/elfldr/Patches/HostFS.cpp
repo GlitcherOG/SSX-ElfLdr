@@ -154,8 +154,8 @@ namespace elfldr {
 							////util::WriteString(util::Ptr(0x0039B440), "data/char/board.mpf");
 
 							for (int i = 1; i < 7; i++) {
-								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + itoa(i) + "_suit.ssh");
-								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + itoa(i) + "_boot.ssh");
+								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + i + "_suit.ssh");
+								util::WriteString(util::Ptr(0x0039B730 + i * 32), "data/char/eddie" + i + "_boot.ssh");
 							}
 
 							
