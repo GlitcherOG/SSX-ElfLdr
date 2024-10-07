@@ -159,7 +159,7 @@ namespace elfldr {
 								snprintf(&charPath[0], 32, "data/char/eddie%d_suit.ssh", i);
 								util::WriteString(util::Ptr(0x0039B730 + (i-1) * 64), charPath);
 								snprintf(&charPath[0], 32, "data/char/eddie%d_boot.ssh", i);
-								util::WriteString(util::Ptr(0x0039B750 + 32 + (i-1) * 64), charPath);
+								util::WriteString(util::Ptr(0x0039B730 + 32 + (i-1) * 64), charPath);
 							}
 
 							
