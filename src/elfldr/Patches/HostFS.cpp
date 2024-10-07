@@ -155,10 +155,10 @@ namespace elfldr {
 							////util::WriteString(util::Ptr(0x0039B440), "data/char/board.mpf");
 							
 							for (int i = 1; i < 7; i++) {
-								static char charPath[25] {};
-								snprintf(&charPath[0], 25, "data/char/eddie%s_suit.ssh", reinterpret_cast<char*>(i));
+								static char charPath[32] {};
+								snprintf(&charPath[0], 32, "data/char/eddie\"%s\"_suit.ssh", reinterpret_cast<char*>(i));
 								util::WriteString(util::Ptr(0x0039B730 + (i-1) * 64), charPath);
-								snprintf(&charPath[0], 25, "data/char/eddie%s_boot.ssh", reinterpret_cast<char*>(i));
+								snprintf(&charPath[0], 32, "data/char/eddie\"%s\"_boot.ssh", reinterpret_cast<char*>(i));
 								util::WriteString(util::Ptr(0x0039B750+ 32 + (i-1) * 64), charPath);
 							}
 
