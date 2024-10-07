@@ -157,8 +157,9 @@ namespace elfldr {
 							for (int i = 1; i < 7; i++) {
 								static char charPath[25] {};
 								snprintf(&charPath[0], 25, "data/char/eddie%s_suit.ssh", reinterpret_cast<char*>(i));
-								util::WriteString(util::Ptr(0x0039B730 + i * 32), charPath);
-								//util::WriteString(util::Ptr(0x0039B730 + i * 32 +16), "data/char/eddie" + reinterpret_cast<char*>(i) + "_boot.ssh");
+								util::WriteString(util::Ptr(0x0039B730 + (i-1) * 64), charPath);
+								snprintf(&charPath[0], 25, "data/char/eddie%s_boot.ssh", reinterpret_cast<char*>(i));
+								util::WriteString(util::Ptr(0x0039B750+ 32 + (i-1) * 64), charPath);
 							}
 
 							
